@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60D640"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/example_text"
+        android:layout_width="277dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="Examples: Action, Adventure, RPG, Shooter, etc. "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/genre_text"
+        android:layout_width="237dp"
+        android:layout_height="79dp"
+        android:gravity="center"
+        android:text="TYPE A GAME GENRE:"
+        android:textColor="#E0071C"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="237dp"
+        android:layout_height="79dp"
+        android:gravity="center"
+        android:text="FIND THE RIGHT GAME FOR YOU!"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/user_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#E0071C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/genre_text"
+        app:layout_constraintStart_toStartOf="@+id/genre_text"
+        app:layout_constraintTop_toBottomOf="@+id/genre_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="209dp"
+        android:layout_height="214dp"
+        app:layout_constraintBottom_toTopOf="@+id/example_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/controller" />
+
+    <Button
+        android:id="@+id/click_button"
+        android:layout_width="127dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#E0071C"
+        android:includeFontPadding="true"
+        android:padding="10dp"
+        android:text="Click to view games"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#9C5B5B"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_type"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/savedgames"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#E0071C"
+        android:includeFontPadding="true"
+        android:padding="10dp"
+        android:text="SEE RECENTLY SAVED GAME"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#9C5B5B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_type"
+        app:layout_constraintVertical_bias="0.527" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

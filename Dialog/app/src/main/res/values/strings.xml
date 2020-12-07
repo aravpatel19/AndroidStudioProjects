@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dialog</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="success_login_msg">Login Successful!</string>
+    <string name="error_login_msg">Please fill in empty fields</string>
+    <string name="login2">Login</string>
+</resources>
